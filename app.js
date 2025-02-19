@@ -13,7 +13,7 @@ const Router = require("./Routes/Routes");
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({origin:"https://benificiary-system.vercel.app"}));
 
 app.use(morgan("dev"));
 
